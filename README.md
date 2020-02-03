@@ -31,7 +31,7 @@ GSHOP is a pc gaming online store, allowing users to buy and rate pc related pro
 
 ### Images
 
-All products have one associated image. There are also some images for the backgrounds and headers for the different views of the application.
+All products have one associated image. There are also some images for the backgrounds and headers for the different views of the application. There will also be a photo associated with each team member in the contacts section.
 
 ### Graphics
 
@@ -43,4 +43,6 @@ The website uses GoogleMaps maps and external e-mail sending in the contact us v
 
 ### Algorithm or advanced query
 
-Cause the website is product sale related. An evaluation system will be implemented, so that the search can be carried out taking into account the ratings (best rated first). The application also shows a pannel personalized for each user where recommended products can be found (based on the products bought by the user).
+Cause the website is product sale related, an evaluation system will be implemented, so that the search can be carried out taking into account the ratings (best rated first). The application also shows a pannel personalized for each user where recommended products can be found (based on the products bought by the user).
+Users, depending on the purchases they have made, will receive a panel with customized products for them.
+For this to work we will use the category of products in the transaction list of each user.
