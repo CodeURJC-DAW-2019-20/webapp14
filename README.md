@@ -12,31 +12,37 @@
 
 ## WEBAPP
 
+### Description
+
+GSHOP is a pc gaming online store, allowing users to buy and rate pc related products. It offers laptops, screens, mice and all kind of gaming items.
+
 ### Entities
 
-* **Product**: Each product has a product id (pk), name, price, category, rating.
-* **Buyout**: Id transaction (pk), total price, id products (fk), status
-* **User**: Id user (pk), email, password, address, payment method
-* **Opinion**: Message, rating, id user (fk)
+* **Product**: Each product has a product id (pk), name, price, description, category, rating, stock.
+* **Buyout**: Id transaction (pk), id product (fk), id user (fk), status (issue, shipped, payment accepted...).
+* **User**: Id user (pk), email, password, address, payment method, rol.
+* **Rating**: Id rating (pk), id transaction (fk), message, rating.
 
 ### Users and permissions
 
-* **Web Managers (Salesman)**: Admin user. This user is able to edit the products the web is currently selling, see graphics, modify information ...
-* **Client Users**: Logged User. This user can access and buy (processing the products stacked on the cart) all the products available. Comment, rate and add to favorites that products. The client can also edit his personal information.  
-* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart.
+* **Web Managers (Salesman)**: Admin user. This user is able to edit and add the products the web is currently selling, see graphics, modify information ...
+* **Client Users**: Logged User. This user can access and buy (processing the products stacked on the cart) all the products available. Comment and rate products. The client can also edit his personal information.  
+* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart. However, a user must be logged for buying as buying needs important information, and to be sure each transsaction has a user.
 
 ### Images
 
-All products have one associated image.
+All products have one associated image. There are also some images for the backgrounds and headers for the different views of the application. There will also be a photo associated with each team member in the contacts section.
 
 ### Graphics
 
-The website will have two bar graphs, which will be responsible of showing the best rated products and the most sold / most popular products. 
+The website will have two bar graphs, which will be responsible of showing the best rated products and the most sold / most popular products. They can be found in the graphics view of the application, only accesible for the admin (salesman). 
 
 ### Complementary Technology
 
-As a complementary technology we choose to apply the use of websockets to implement a real-time chat that will take care of product comments. The website also use GoogleMaps maps.
+The website uses GoogleMaps maps and external e-mail sending in the contact us view, showing where the developper group is located and how to contact them.
 
 ### Algorithm or advanced query
 
-Cause the website is product sale related. An evaluation system will be implemented, so that the search can be carried out taking into account the ratings (best rated first).
+Cause the website is product sale related, an evaluation system will be implemented, so that the search can be carried out taking into account the ratings (best rated first). The application also shows a pannel personalized for each user where recommended products can be found (based on the products bought by the user).
+Users, depending on the purchases they have made, will receive a panel with customized products for them.
+For this to work we will use the category of products in the transaction list of each user.
