@@ -22,8 +22,8 @@
 ### Users and permissions
 
 * **Web Managers (Salesman)**: Admin user. This user is able to edit the products the web is currently selling, see graphics, modify information ...
-* **Client Users**: Logged User. This user can access and buy (processing the products stacked on the cart) all the products available. Comment, rate and add to favorites that products. The client can also edit his personal information.  
-* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart.
+* **Client Users**: Logged User. This user can access and buy (processing the products stacked on the cart) all the products available. Comment, rate and add to favorites that products. The client can also edit his personal information and view his shopping list.  
+* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart but he need to login for buy it.
 
 ### Images
 
