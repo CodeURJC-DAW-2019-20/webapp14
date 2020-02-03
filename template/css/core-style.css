@@ -18,8 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  /*background color for the body of the page*/
-  background-color: #bfbfbf;
+  background-color: #ffffff;
   margin-top: 85px; }
   @media only screen and (max-width: 767px) {
     body {
@@ -265,8 +264,7 @@ img {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     min-width: 50%;
-    /*background color for the header*/
-    background-color: #bfbfbf;
+    background-color: #ffffff;
     width: 50%; }
     @media only screen and (max-width: 767px) {
       .header_area .classy-navbar,
@@ -313,8 +311,7 @@ img {
         border-left: none; } }
     .header_area .search-area form input {
       border: none;
-      /*background color for the searcher*/
-      background-color: #bfbfbf;
+      background-color: #ffffff;
       width: 200px;
       height: 85px;
       padding: 0 15px 0 60px;
@@ -572,8 +569,7 @@ img {
         .right-side-cart-area .cart-content .cart-list .single-cart-item:hover .product-image .cart-item-desc {
           background-color: rgba(0, 0, 0, 0.8); }
     .right-side-cart-area .cart-content .cart-amount-summary {
-      /*background color for the cart*/
-      background-color: #bfbfbf;
+      background-color: #ffffff;
       padding: 100px 10%;
       position: relative;
       z-index: 10;
