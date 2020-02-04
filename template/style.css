@@ -10,6 +10,10 @@
 
 /* BASIC */
 
+.loginAndRegister {
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
 .loginAndRegister a {
   color: #92badd;
   display:inline-block;
