@@ -27,7 +27,7 @@ GSHOP is a pc gaming online store, allowing users to buy and rate pc related pro
 
 * **Web Managers (Salesman)**: Admin user. This user is able to edit and add the products the web is currently selling, see graphics, modify information ...
 * **Client Users**: Logged User. This user can access and buy (processing the products stacked on the cart) all the products available. Comment and rate products. The client can also edit his personal information.  
-* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart. However, a user must be logged for buying as buying needs important information, and to be sure each transsaction has a user.
+* **Anonymous Users**: This user can access and see all features of the web, and put the products in the cart. However, a user must be logged for buying as buying needs important information, and to be sure each transsaction has a user and view his shopping list.  
 
 ### Images
 
