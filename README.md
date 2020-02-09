@@ -21,7 +21,7 @@ GSHOP is a pc gaming online store, allowing users to buy and rate pc related pro
 * **Product**: Each product has a product id (pk), name, price, description, category, rating, stock.
 * **Buyout**: Id transaction (pk), id product (fk), id user (fk), status (issue, shipped, payment accepted...).
 * **User**: Id user (pk), email, password, address, payment method, rol.
-* **Rating**: Id rating (pk), id transaction (fk), message, rating.
+* **Rating**: Id rating (pk), id transaction (fk), id product, rating.
 
 ### Users and permissions
 
