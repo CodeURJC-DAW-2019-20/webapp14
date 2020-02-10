@@ -175,93 +175,93 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Graphics</h2>
+                    <h2>User Info</h2>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- ##### Shop Grid Area Start ##### -->
-<section class="shop_grid_area section-padding-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-                <div class="grafica ">
-                    <img class="mx-auto d-block" src="img/core-img/graphics.jpg" alt="">
-                    <br>
-                    <img class="mx-auto d-block" src="img/core-img/graphics-1.jpg" alt="">
-                </div>
+
+
+
+
+<div class="user-info">
+
+    <div class="wrapper">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="first">
+                <img src="img/userImg.png" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="login" class="second" name="login" placeholder="Username">
+                <input type="text" id="password" class="second" name="login" placeholder="Password">
+                <input type="text" id="country" class="second" name="login" placeholder="Country">
+                <input type="text" id="adress" class="third" name="login" placeholder="Adress">
+                <input type="text" id="postCode" class="third" name="login" placeholder="Post Code">
+                <input type="text" id="city" class="third" name="login" placeholder="City/Town">
+                <input type="text" id="creditCard" class="third" name="login" placeholder="Credit Card">
+                <input type="text" id="emailAdress" class="third" name="login" placeholder="Email Adress">
+                <input type="submit" class="fourth" value="Edit information">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container h-100">
+    <div class="row h-100 align-items-center">
+        <div class="col-12">
+            <div class="page-title text-center">
+                <h2>Your Orders</h2>
             </div>
         </div>
     </div>
-</section>
-<!--<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"-->
-<!--     width="4in" height="2in" viewBox="-35 -10 240 120">-->
-<!--    <title>DataPoint Markers on a Data Line</title>-->
-<!--    <path stroke="lightSkyBlue"-->
-<!--          d="M0, 0H200 M0,20H200 M0,40H200-->
-<!-- M0,60H200 M0,80H200 M0,100H200"/>-->
-<!--    <g text-anchor="end" aria-label="y-axis"-->
-<!--       style="font: 8px sans-serif; fill: navy" >-->
-<!--        <desc>Y-axis tick labels</desc>-->
-<!--        <text x="-7" dy="0.7ex" y="100">0%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="80">20%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="60">40%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="40">60%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="20">80%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="0">100%</text>-->
-<!--    </g>-->
-<!--    <style>-->
-<!--        .dataline {-->
-<!--            fill: none;-->
-<!--            stroke: currentColor;-->
-<!--            stroke-linejoin: bevel;-->
-<!--        }-->
-<!--        .data-marker {-->
-<!--            stroke: currentColor;-->
-<!--            stroke-width: 1.5px;-->
-<!--            fill: currentColor;-->
-<!--            fill-opacity: 0.5;-->
-<!--        }-->
-<!--    </style>-->
-<!--    Emphasizing Points | 527-->
-<!--    <marker id="datapoint-1" overflow="visible">-->
-<!--        <circle class="data-marker" r="2.5" color="tomato" />-->
-<!--    </marker>-->
-<!--    <polyline id="dataline-1" class="dataline" color="darkRed"-->
-<!--              style="marker: url(#datapoint-1)" >-->
-<!--        <title>Team Red</title>-->
-<!--    </polyline>-->
-<!--    <marker id="datapoint-2" overflow="visible">-->
-<!--        <polygon class="data-marker" points="-3,0 0,3 3,0 0,-3"-->
-<!--                 color="mediumSeaGreen" />-->
-<!--    </marker>-->
-<!--    <polyline id="dataline-2" class="dataline" color="#364"-->
-<!--              style="marker: url(#datapoint-2)" >-->
-<!--        <title>Team Green</title>-->
-<!--    </polyline>-->
-<!--    <script><![CDATA[-->
-<!--    (function(){-->
-<!--        var datalines = ["dataline-1", "dataline-2"],-->
-<!--            nLines = datalines.length,-->
-<!--            nPoints = 14,-->
-<!--            dx = 15,-->
-<!--            maxY = 100;-->
-<!--        for (var l=0; l<nLines; l++ ) {-->
-<!--            var data = new Array(nPoints),-->
-<!--                points = new Array(nPoints);-->
-<!--            for (var i=0; i<nPoints; i++) {-->
-<!--                data[i] = [i, Math.random()];-->
-<!--                points[i] = [i*dx, maxY * (1 - data[i][1])];-->
-<!--            }-->
-<!--            document.getElementById(datalines[l])-->
-<!--                .setAttribute("points", points.toString() );-->
-<!--        }-->
-<!--    })()-->
-<!--    ]]> </script>-->
-<!--</svg>-->
+</div>
 
-<!-- ##### Graphics goes here ##### -->
+<div>
+    <section class="transaction_list_area section-padding-80">
+
+        <table class="product-table col-md-10" align="center" >
+            <tr>
+                <th class="tg-0lax">ID</th>
+                <th class="tg-0lax">Product ID</th>
+                <th class="tg-0lax">Customer ID</th>
+                <th class="tg-0lax">ID Seller</th>
+                <th class="tg-0lax">State</th>
+                <th class="tg-0lax">Ver</th>
+            </tr>
+            <tr>
+                <td class="tg-hmp3">1</td>
+                <td class="tg-hmp3">2</td>
+                <td class="tg-hmp3">1</td>
+                <td class="tg-hmp3">1</td>
+                <td class="tg-hmp3">Shipped</td>
+                <td class="tg-hmp3">
+                    <input type="button" onclick="window.location.href = 'user.html';" value=" Start Issue "/>
+                </td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">2</td>
+                <td class="tg-0lax">1</td>
+                <td class="tg-0lax">3</td>
+                <td class="tg-0lax">1</td>
+                <td class="tg-0lax">Shipped</td>
+                <td class="tg-hmp3">
+                    <input type="button" onclick="window.location.href = 'user.html';" value=" Start Issue "/>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+</div>
+
+
+
 
 
 <!-- ##### Footer Area Start ##### -->
