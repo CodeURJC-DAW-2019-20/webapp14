@@ -52,6 +52,7 @@ For this to work we will use the category of products in the transaction list of
 
 Main page of the website, from here we can access the different sections such as the store, contacts or graphics. We find the list of objects separated by categories and also the most popular products. Also the news of the store will be put so that the user can see it.
 
+
 ### Products
 ![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Products.png)
 
@@ -82,6 +83,20 @@ In view of the charts, we have two different charts, one of which contains the b
 
 This part of the website is the contacts section, where you will find the personal data of the group members and a photo of each. If you click on any member name, you will be redirected to his email, in case you want to have contact with him. We have also included a google maps space so that people know where to find us.
 
+### User
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/user.png)
+
+In this section of the website a logged-in user will be able to see the personal data that is stored in it and may change the data that needs a modification. At the bottom you will have a button to access the transactions section you have made.
+
+### Register
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Register.png)
+
+In case of not having an account, the user can create one by accessing this section, filling in all the information they ask you for, among them: name, password, address, postal code, credit card, etc.
+
+### Login
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Login.png)
+
+In order to become a logged-in user, after having created an account in the register section you must enter the login and enter your username and password and thus be able to access purchases and other exclusive sections of the logged-in users.
 
 ### Diagram
 ![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Diagrama.png)
