@@ -74,7 +74,7 @@ Once we have completed the cart we want in the store we will access this section
 This page can only be accessed by a previously logged in user. This is a purchase history, where the user can check the data of previous purchases that he has made such as the product id, seller id or in what state the purchase is (it is on the way, there has been an error, etc. )
 
 ### Graphics
-![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/graphics.png)
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Graphics.png)
 
 In view of the charts, we have two different charts, one of which contains the best rated category and a second chart with the best selling category. These graphics are updated according to sales and rankin that users put to each object.
 
