@@ -99,4 +99,4 @@ In case of not having an account, the user can create one by accessing this sect
 In order to become a logged-in user, after having created an account in the register section you must enter the login and enter your username and password and thus be able to access purchases and other exclusive sections of the logged-in users.
 
 ### Diagram
-![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Diagrama.png)
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Diagram.png)
