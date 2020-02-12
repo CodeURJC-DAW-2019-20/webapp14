@@ -48,22 +48,22 @@ Users, depending on the purchases they have made, will receive a panel with cust
 For this to work we will use the category of products in the transaction list of each user.
 
 ### Index
-![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/index.png)
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Index.png)
 
 Main page of the website, from here we can access the different sections such as the store, contacts or graphics. We find the list of objects separated by categories and also the most popular products. Also the news of the store will be put so that the user can see it.
 
 ### Products
-![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/products.png)
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Products.png)
 
 The store of the website. Here we find the list of all the objects for sale in the store, which can be divided by categories, by prices or by ranking. If we click on an object it will take us to its corresponding view with the product details and if we click on add to the cart we can put it in our personal cart for later purchase.
 
 ### Product detail
-![githug-samll](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/productdetail.png)
+![githug-samll](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Singleproduct.png)
 
 When you click on a specific product in the store it will take you to its corresponding detailed page where you will put the characteristics of the object in question, in addition to some photos, the price, a brief description, and the possibility of adding the object to the cart.
 
 ### Chekout
-![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/checkout.png)
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Checkout.png)
 
 Once we have completed the cart we want in the store we will access this section, where we can review our purchase and we will have to enter our data to access our account. In case of not having an account, we must create one and enter the payment method.
 
