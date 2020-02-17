@@ -182,86 +182,21 @@
     </div>
 </div>
 <!-- ##### Shop Grid Area Start ##### -->
-<section class="shop_grid_area section-padding-80">
+<section class="section-padding-100" style="padding-left: 100px">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-                <div class="grafica ">
-                    <img class="mx-auto d-block" src="img/core-img/graphics.jpg" alt="">
-                    <br>
-                    <img class="mx-auto d-block" src="img/core-img/graphics-1.jpg" alt="">
-                </div>
-            </div>
+        <div class="row justify-content-center">
+            <div id="piechart"></div>
         </div>
     </div>
 </section>
-<!--<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"-->
-<!--     width="4in" height="2in" viewBox="-35 -10 240 120">-->
-<!--    <title>DataPoint Markers on a Data Line</title>-->
-<!--    <path stroke="lightSkyBlue"-->
-<!--          d="M0, 0H200 M0,20H200 M0,40H200-->
-<!-- M0,60H200 M0,80H200 M0,100H200"/>-->
-<!--    <g text-anchor="end" aria-label="y-axis"-->
-<!--       style="font: 8px sans-serif; fill: navy" >-->
-<!--        <desc>Y-axis tick labels</desc>-->
-<!--        <text x="-7" dy="0.7ex" y="100">0%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="80">20%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="60">40%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="40">60%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="20">80%</text>-->
-<!--        <text x="-7" dy="0.7ex" y="0">100%</text>-->
-<!--    </g>-->
-<!--    <style>-->
-<!--        .dataline {-->
-<!--            fill: none;-->
-<!--            stroke: currentColor;-->
-<!--            stroke-linejoin: bevel;-->
-<!--        }-->
-<!--        .data-marker {-->
-<!--            stroke: currentColor;-->
-<!--            stroke-width: 1.5px;-->
-<!--            fill: currentColor;-->
-<!--            fill-opacity: 0.5;-->
-<!--        }-->
-<!--    </style>-->
-<!--    Emphasizing Points | 527-->
-<!--    <marker id="datapoint-1" overflow="visible">-->
-<!--        <circle class="data-marker" r="2.5" color="tomato" />-->
-<!--    </marker>-->
-<!--    <polyline id="dataline-1" class="dataline" color="darkRed"-->
-<!--              style="marker: url(#datapoint-1)" >-->
-<!--        <title>Team Red</title>-->
-<!--    </polyline>-->
-<!--    <marker id="datapoint-2" overflow="visible">-->
-<!--        <polygon class="data-marker" points="-3,0 0,3 3,0 0,-3"-->
-<!--                 color="mediumSeaGreen" />-->
-<!--    </marker>-->
-<!--    <polyline id="dataline-2" class="dataline" color="#364"-->
-<!--              style="marker: url(#datapoint-2)" >-->
-<!--        <title>Team Green</title>-->
-<!--    </polyline>-->
-<!--    <script><![CDATA[-->
-<!--    (function(){-->
-<!--        var datalines = ["dataline-1", "dataline-2"],-->
-<!--            nLines = datalines.length,-->
-<!--            nPoints = 14,-->
-<!--            dx = 15,-->
-<!--            maxY = 100;-->
-<!--        for (var l=0; l<nLines; l++ ) {-->
-<!--            var data = new Array(nPoints),-->
-<!--                points = new Array(nPoints);-->
-<!--            for (var i=0; i<nPoints; i++) {-->
-<!--                data[i] = [i, Math.random()];-->
-<!--                points[i] = [i*dx, maxY * (1 - data[i][1])];-->
-<!--            }-->
-<!--            document.getElementById(datalines[l])-->
-<!--                .setAttribute("points", points.toString() );-->
-<!--        }-->
-<!--    })()-->
-<!--    ]]> </script>-->
-<!--</svg>-->
 
-<!-- ##### Graphics goes here ##### -->
+<section class="section-padding-100" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div id="columnchart" ></div>>
+        </div>
+    </div>
+</section>
 
 
 <!-- ##### Footer Area Start ##### -->
@@ -289,6 +224,8 @@
 </footer>
 <!-- ##### Footer Area End ##### -->
 
+<!--Google charts-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!-- jQuery (Necessary for All JavaScript Plugins) -->
 <script src="js/jquery/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
@@ -301,6 +238,69 @@
 <script src="js/classy-nav.min.js"></script>
 <!-- Active js -->
 <script src="js/active.js"></script>
+
+
+
+<script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Product', 'Bought'],
+            ['Asus laptop', 2],
+            ['MSI laptop', 12],
+            ['Logitech mouse', 23],
+            ['Corsair keyboard', 8],
+            ['Kitsune gaming chair', 5]
+        ]);
+
+        // Optional; add a title and set the width and height of the chart
+        var options = {'title':'Top selling products', 'width':1000, 'height':600};
+
+        // Display the chart inside the <div> element with id="piechart"
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+    }
+</script>
+
+<script type="text/javascript">
+
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    // barsVisualization must be global in our script tag to be able
+    // to get and set selection.
+    var barsVisualization;
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Product', 'Rating'],
+            ['Asus laptop', 4.6],
+            ['MSI laptop', 4.2],
+            ['Logitech mouse', 3.5],
+            ['Corsair keyboard', 3.2],
+            ['Kitsune gaming chair', 3]
+
+        ]);
+
+        // Optional; add a title and set the width and height of the chart
+        var options = {'title':'Top rated products', 'width':800, 'height':650,
+            vAxis: {minValue: 0,
+                    maxValue: 5
+            }
+
+
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+        chart.draw(data, options);
+
+    }
+
+
+</script>
 
 </body>
 </html>
