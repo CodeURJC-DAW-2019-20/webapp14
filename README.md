@@ -18,10 +18,13 @@ GSHOP is a pc gaming online store, allowing users to buy and rate pc related pro
 
 ### Entities
 
-* **Product**: Each product has a product id (pk), name, price, description, category, rating, stock.
-* **Buyout**: Id transaction (pk), id product (fk), id user (fk), status (issue, shipped, payment accepted...).
-* **User**: Id user (pk), email, password, address, payment method, rol.
-* **Rating**: Id rating (pk), id transaction (fk), id product, rating.
+* **Product**: Each product has a id (pk), name, price, description, category, stock, brand.
+* **Transaction**: Id(pk), id product (fk), id user (fk), status (issue, shipped, payment accepted...).
+* **User**: Id(pk), email, password, country, postal code, city, address, credit card number, rol.
+* **Rating**: Id rating (pk), id transaction (fk), rating.
+
+Here is a image of the bbdd schema:
+![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/bbdd.png)
 
 ### Users and permissions
 
@@ -35,7 +38,7 @@ All products have one associated image. There are also some images for the backg
 
 ### Graphics
 
-The website will have two bar graphs, which will be responsible of showing the best rated products and the most sold / most popular products. They can be found in the graphics view of the application, only accesible for the admin (salesman). 
+The website will have two graphs, a cheese chart which will be responsible of showing the best rated products and a bar chart which will show the most sold / most popular products. They can be found in the graphics view of the application, only accesible for the admin (salesman). 
 
 ### Complementary Technology
 
