@@ -264,6 +264,7 @@ img {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     min-width: 50%;
+    background-color: #ffffff;
     width: 50%; }
     @media only screen and (max-width: 767px) {
       .header_area .classy-navbar,
@@ -568,6 +569,7 @@ img {
         .right-side-cart-area .cart-content .cart-list .single-cart-item:hover .product-image .cart-item-desc {
           background-color: rgba(0, 0, 0, 0.8); }
     .right-side-cart-area .cart-content .cart-amount-summary {
+      background-color: #ffffff;
       padding: 100px 10%;
       position: relative;
       z-index: 10;
@@ -1733,9 +1735,8 @@ img {
       font-weight: 300; }
     .contact-area .contact-info .contact-address p {
       font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 10px; }
-      .contact-area .contact-info .contact-address p span {
+      font-weight: 600; }
+      /*.contact-area .contact-info .contact-address p span {
         font-weight: 600;
         color: #000000;
         width: 100px;
@@ -1747,7 +1748,7 @@ img {
           font-size: 14px;
           font-weight: 300; }
           .contact-area .contact-info .contact-address p:last-child a:hover {
-            color: #0315ff; }
+            color: #0315ff; }*/
 
 /* ##### The End ##### */
 
