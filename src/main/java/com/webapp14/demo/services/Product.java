@@ -15,7 +15,7 @@ public class Product {
 	private String name;
 	private String description;
 	
-	private Long price;
+	private Double price;
 	
 	private String category;
 	private String brand;
@@ -24,7 +24,7 @@ public class Product {
 
 	public Product() {}
 
-	public Product(String name, String description, Long price, String category, String brand, Long stock) {
+	public Product(String name, String description, double price, String category, String brand, Long stock) {
 		super();
 		this.name = name;
 		this.description = description;
@@ -58,11 +58,11 @@ public class Product {
 		this.id = id;
 	}
 	
-	public Long getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Long price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	

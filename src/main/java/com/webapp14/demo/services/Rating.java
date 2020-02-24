@@ -12,23 +12,23 @@ public class Rating {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id = null;
 	
-	private Long rating;
+	private Double rating;
 	
 	private Long id_transaction;
 	
 	public Rating() {}
 
-	public Rating(Long rating, Long id_transaction) {
+	public Rating(Double rating, Long id_transaction) {
 		super();
 		this.rating = rating;
 		this.id_transaction = id_transaction;
 	}
 
-	public Long getRating() {
+	public Double getRating() {
 		return rating;
 	}
 
-	public void setRating(Long rating) {
+	public void setRating(Double rating) {
 		this.rating = rating;
 	}
 
