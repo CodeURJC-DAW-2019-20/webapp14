@@ -103,3 +103,88 @@ In order to become a logged-in user, after having created an account in the regi
 
 ### Diagram
 ![github-small](https://github.com/CodeURJC-DAW-2019-20/webapp14/blob/develop/imagereadme/Diagram.png)
+
+
+### Team members participation
+
+**Daniel Lahera**
+
+During this fase i fixed errors and updated html or css files to fix errors pending from phase 1. It is important to mention that at first i was in charge of creating the data base but i postponed it and did not work enough to meet my companions expectatives, so guillermo did it.
+
+Five most siginificant commits during phase 2:
+* Updated shop.html to fit our shop model. 
+* Removed favourite button in index, shop and single product details.
+* Changed password type in login and register.
+* Changed type of credit card.
+* Fixed a warning in contact.html.
+
+Five files in which this member has participated more:
+* shop.html
+* readme.md 
+* index.html
+* single-product-details.html 
+* style.css 
+
+**Raúl Hernández**
+
+Five most siginificant commits during phase 2:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+Five files in which this member has participated more:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+**Enrique Garrido**
+
+Five most siginificant commits during phase 2:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+Five files in which this member has participated more:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+**Víctor López**
+
+Five most siginificant commits during phase 2:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+Five files in which this member has participated more:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+**Guillermo Martín**
+
+Five most siginificant commits during phase 2:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+Five files in which this member has participated more:
+* 1
+* 2
+* 3
+* 4
+* 5
