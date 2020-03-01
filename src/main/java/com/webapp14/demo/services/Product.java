@@ -1,9 +1,13 @@
 package com.webapp14.demo.services;
 
+
+import javax.persistence.OneToOne;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 
 @Entity
 public class Product {
@@ -22,6 +26,10 @@ public class Product {
 	
 	private Long stock;
 
+	@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_transaction")
+    private Transaction transaction;
+	
 	public Product() {}
 
 	public Product(String name, String description, double price, String category, String brand, Long stock) {

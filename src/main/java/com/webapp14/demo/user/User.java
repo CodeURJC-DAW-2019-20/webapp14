@@ -3,6 +3,7 @@ package com.webapp14.demo.user;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -10,10 +11,12 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.webapp14.demo.services.Transaction;
 
 /**
  * This is the entity to store in database user information. It contains the
@@ -48,6 +51,9 @@ public class User {
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<String> roles;
+	
+	@OneToMany(mappedBy="transaction")
+    private Set<Transaction> transaction;
 
 	public User() {
 	}
