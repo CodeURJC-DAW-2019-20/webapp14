@@ -12,15 +12,15 @@
                 </div>
 
                 <!-- Login Form -->
-                <form>
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
-                    <input type="password" id="password" class="fadeIn second" name="login" placeholder="Password">
-                    <input type="text" id="country" class="fadeIn second" name="login" placeholder="Country">
-                    <input type="text" id="adress" class="fadeIn third" name="login" placeholder="Adress">
-                    <input type="text" id="postCode" class="fadeIn third" name="login" placeholder="Post Code">
-                    <input type="text" id="city" class="fadeIn third" name="login" placeholder="City/Town">
-                    <input type="text" id="creditCard" class="fadeIn third" name="login" placeholder="Credit Card">
-                    <input type="text" id="emailAdress" class="fadeIn third" name="login" placeholder="Email Adress">
+                <form action="/register" method="post">
+                    <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
+                    <input type="password" id="password" class="fadeIn second" name="password" placeholder="Password">
+                    <input type="text" id="country" class="fadeIn second" name="country" placeholder="Country">
+                    <input type="text" id="adress" class="fadeIn third" name="adress" placeholder="Adress">
+                    <input type="text" id="postCode" class="fadeIn third" name="postCode" placeholder="Post Code">
+                    <input type="text" id="city" class="fadeIn third" name="city" placeholder="City/Town">
+                    <input type="text" id="creditCard" class="fadeIn third" name="creditCard" placeholder="Credit Card">
+                    <input type="text" id="emailAdress" class="fadeIn third" name="emailAdress" placeholder="Email Adress">
                     <input type="submit" class="fadeIn fourth" value="Register">
                     <input type="hidden" name="_csrf" value="{{token}}" />
                 </form>

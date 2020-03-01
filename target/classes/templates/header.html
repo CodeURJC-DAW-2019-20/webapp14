@@ -82,10 +82,12 @@
                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
                 </div>
+                {{^admin}}
                 <!-- User Login Info -->
                 <div class="user-login-info">
-                    <a href="login.html"><img src="/assets/img/core-img/user.svg" alt=""></a>
+                    <a href="/login"><img src="/assets/img/core-img/user.svg" alt=""></a>
                 </div>
+                {{/admin}}
                 <!-- Cart Area -->
                 <div class="cart-area">
                     <a href="#" id="essenceCartBtn"><img src="/assets/img/core-img/bag.svg" alt=""> <span>3</span></a>
@@ -164,7 +166,7 @@
                     <li><span>total:</span> <span>$1488.98</span></li>
                 </ul>
                 <div class="checkout-btn mt-100">
-                    <a href="checkout.html" class="btn essence-btn">check out</a>
+                    <a href="/checkout" class="btn essence-btn">check out</a>
                 </div>
             </div>
         </div>
