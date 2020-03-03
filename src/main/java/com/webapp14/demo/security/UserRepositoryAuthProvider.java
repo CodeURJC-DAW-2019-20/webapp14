@@ -34,6 +34,7 @@ public class UserRepositoryAuthProvider implements AuthenticationProvider {
 	@Autowired
 	private UserComponent userComponent;
 
+	/* Commented for fix in h2 start. Delete after
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
@@ -53,17 +54,25 @@ public class UserRepositoryAuthProvider implements AuthenticationProvider {
 
 			userComponent.setLoggedUser(user);
 
-			List<GrantedAuthority> roles = new ArrayList<>();
-			for (String role : user.getRoles()) {
-				roles.add(new SimpleGrantedAuthority(role));
+			List<GrantedAuthority> rol = new ArrayList<>();
+			for (String role : user.getRol()) {
+				rol.add(new SimpleGrantedAuthority(role));
 			}
 
-			return new UsernamePasswordAuthenticationToken(username, password, roles);
+			return new UsernamePasswordAuthenticationToken(username, password, rol);
 		}
-	}
+	}*/
 
+	//Delete after
 	@Override
 	public boolean supports(Class<?> authenticationObject) {
 		return true;
+	}
+
+	//Delete after
+	@Override
+	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

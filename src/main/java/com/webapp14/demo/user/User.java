@@ -13,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -42,50 +43,61 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private int id;
 
-	private String name;
+	private String user_name;
 
 	@JsonIgnore
-	private String passwordHash;
+	private String password;
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	private List<String> roles;
+	private String country;
+
+	private String adress;
+
+	private String post_code;
+
+	private String city;
+
+	private String credit_card_number;
+
+	private String email;
+
+	private String rol;
 	
-	@OneToMany(mappedBy="transaction")
+	@OneToMany
     private Set<Transaction> transaction;
 
 	public User() {
 	}
-
-	public User(String name, String password, String... roles) {
-		this.name = name;
-		this.passwordHash = new BCryptPasswordEncoder().encode(password);
-		this.roles = new ArrayList<>(Arrays.asList(roles));
+	
+	public User(String user_name, String password, String... roles) {
+		this.user_name = user_name;
+		this.password = new BCryptPasswordEncoder().encode(password);
+		this.rol = rol;
 	}
 
 	public String getName() {
-		return name;
+		return user_name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String user_name) {
+		this.user_name = user_name;
 	}
 
 	public String getPasswordHash() {
-		return passwordHash;
+		return password;
 	}
 
-	public void setPasswordHash(String passwordHash) {
-		this.passwordHash = passwordHash;
+	public void setPasswordHash(String password) {
+		this.password= password;
 	}
 
-	public List<String> getRoles() {
-		return roles;
+	public String getRol() {
+		return rol;
 	}
 
-	public void setRoles(List<String> roles) {
-		this.roles = roles;
+	public void setRol(String rol) {
+		this.rol= rol;
 	}
 
 }

@@ -19,10 +19,10 @@ public class WebController {
 		return "index";
 	}
 	 
-	@RequestMapping("/login")
-	public String login(Model model) {
-		return "login";
-	}
+	//@RequestMapping("/login")
+	//public String login(Model model) {
+	//	return "login";
+	//}
 	
 	@RequestMapping("/checkout")
 	public String checkout(Model model) {
@@ -44,8 +44,8 @@ public class WebController {
         boolean logged = userComponent.getLoggedUser() != null;
         model.addAttribute("logged", logged);
         if(logged){
-            model.addAttribute("admin",userComponent.getLoggedUser().getRoles().contains("ROLE_ADMIN"));
-            model.addAttribute("user",userComponent.getLoggedUser().getRoles().contains("ROLE_USER"));
+            model.addAttribute("admin",userComponent.getLoggedUser().getRol().contains("ROLE_ADMIN"));
+            model.addAttribute("user",userComponent.getLoggedUser().getRol().contains("ROLE_USER"));
         }
     }
 }

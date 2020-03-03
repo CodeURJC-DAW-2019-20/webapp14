@@ -16,57 +16,54 @@ public class Transaction {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id = null;
+	private int id;
 	
-	private Long id_product;
+	private int id_product;
 	
-	private Long id_user;
+	private int id_user;
 	
 	private String status;
 
-	@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_user")
+	@ManyToOne
     private User user;
 	
-	@OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_product")
+	@OneToOne
     private Product product;
 	
-	@OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_rating")
+	@OneToOne
     private Rating rating;
 	 
 	
 	public Transaction() {}
 
-	public Transaction(Long id_product, Long id_user, String status) {
+	public Transaction(int id_product, int id_user, String status) {
 		super();
 		this.id_product = id_product;
 		this.id_user = id_user;
 		this.status = status;
 	}
 
-	public Long getProduct() {
+	public int getProduct() {
 		return id_product;
 	}
 
-	public void setProduct(Long id_product) {
+	public void setProduct(int id_product) {
 		this.id_product = id_product;
 	}
 
-	public Long getUser() {
+	public int getUser() {
 		return id_user;
 	}
 
-	public void setUser(Long id_user) {
+	public void setUser(int id_user) {
 		this.id_user = id_user;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	

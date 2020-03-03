@@ -13,45 +13,44 @@ public class Rating {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id = null;
+	private int id;
 	
-	private Double rating;
+	private int rating;
 	
-	private Long id_transaction;
+	private int id_transaction;
 	
-	@OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_transaction")
+	@OneToOne
     private Transaction transaction;
 	
 	public Rating() {}
 
-	public Rating(Double rating, Long id_transaction) {
+	public Rating(int rating, int id_transaction) {
 		super();
 		this.rating = rating;
 		this.id_transaction = id_transaction;
 	}
 
-	public Double getRating() {
+	public int getRating() {
 		return rating;
 	}
 
-	public void setRating(Double rating) {
+	public void setRating(int rating) {
 		this.rating = rating;
 	}
 
-	public Long getTransaction() {
+	public int getTransaction() {
 		return id_transaction;
 	}
 
-	public void setTransaction(Long id_transaction) {
+	public void setTransaction(int id_transaction) {
 		this.id_transaction = id_transaction;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

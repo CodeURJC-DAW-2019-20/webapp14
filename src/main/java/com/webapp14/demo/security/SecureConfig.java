@@ -19,6 +19,17 @@ public class SecureConfig extends WebSecurityConfigurerAdapter {
 	    // Public pages
 		  //http.httpBasic().disable();
 		  
+		  
+		  //For h2 only delete after
+		  http.authorizeRequests()
+          .antMatchers("/").permitAll()
+          .antMatchers("/h2-console/**").permitAll();
+		  
+		  http.csrf().disable();
+	        http.headers().frameOptions().disable();
+	      //end of delete  
+
+		  
 		  http.authorizeRequests().antMatchers("/").permitAll();
 		  http.authorizeRequests().antMatchers("/login").permitAll();
 		  http.authorizeRequests().antMatchers("/loginerror").permitAll();

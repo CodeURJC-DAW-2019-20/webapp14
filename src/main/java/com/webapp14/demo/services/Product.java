@@ -14,25 +14,24 @@ public class Product {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id = null;
+	private int id;
 	
 	private String name;
 	private String description;
 	
-	private Double price;
+	private float price;
 	
 	private String category;
 	private String brand;
 	
-	private Long stock;
+	private int stock;
 
-	@OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_transaction")
+	@OneToOne
     private Transaction transaction;
 	
 	public Product() {}
 
-	public Product(String name, String description, double price, String category, String brand, Long stock) {
+	public Product(String name, String description, float price, String category, String brand, int stock) {
 		super();
 		this.name = name;
 		this.description = description;
@@ -58,19 +57,19 @@ public class Product {
 		this.description = description;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	
-	public Double getPrice() {
+	public float getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	
@@ -90,11 +89,11 @@ public class Product {
 		this.brand = brand;
 	}
 	
-	public Long getStock() {
+	public int getStock() {
 		return stock;
 	}
 
-	public void setStock(Long stock) {
+	public void setStock(int stock) {
 		this.stock = stock;
 	}
 
